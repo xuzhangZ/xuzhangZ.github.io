@@ -7,15 +7,20 @@
   
   <title>2day | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="第二天  博客上线1.在github创建一个仓库：仓库名字：github用户名.github.io 2.找到博客代码目录 3.生成静态资源文件 1hexo g  4.j将public目录复制到一个新的文件夹里面  5.初始化git并且关联  12345git init # 在目录里面多了一个.git文件git add .git commit -m &amp;#x27;描述&amp;#x27;git remote">
+<meta property="og:type" content="article">
 <meta property="og:title" content="2day">
 <meta property="og:url" content="http://example.com/2021/08/18/2.day/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="第二天  博客上线1.在github创建一个仓库：仓库名字：github用户名.github.io 2.找到博客代码目录 3.生成静态资源文件 1hexo g  4.j将public目录复制到一个新的文件夹里面  5.初始化git并且关联  12345git init # 在目录里面多了一个.git文件git add .git commit -m &amp;#x27;描述&amp;#x27;git remote">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/xuzhangZ/newcdn/img/image-20210819194640486.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/xuzhangZ/newcdn/img/image-20210819200304261.png">
 <meta property="article:published_time" content="2021-08-18T04:04:58.000Z">
-<meta property="article:modified_time" content="2021-08-19T10:45:00.947Z">
+<meta property="article:modified_time" content="2021-08-19T12:08:33.849Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/xuzhangZ/newcdn/img/image-20210819194640486.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -86,7 +91,35 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="第二天-博客上线"><a href="#第二天-博客上线" class="headerlink" title="第二天  博客上线"></a>第二天  博客上线</h1><p>1.在github创建一个仓库：仓库名字：github用户名.github.io</p>
+<p>2.找到博客代码目录</p>
+<p>3.生成静态资源文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+
+<p>4.j将public目录复制到一个新的文件夹里面</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xuzhangZ/newcdn/img/image-20210819194640486.png" alt="image-20210819194640486"></p>
+<p>5.初始化git并且关联 </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git init # 在目录里面多了一个.git文件</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&#x27;描述&#x27;</span></span><br><span class="line">git remote add origin 远程地址</span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+
+<p>6.预览：用户名.github.io</p>
+<h1 id="git的操作"><a href="#git的操作" class="headerlink" title="git的操作"></a>git的操作</h1><h2 id="cvs："><a href="#cvs：" class="headerlink" title="cvs："></a>cvs：</h2><h2 id="svn："><a href="#svn：" class="headerlink" title="svn："></a>svn：</h2><h2 id="git：码云，github，gitlab，coding-腾讯云"><a href="#git：码云，github，gitlab，coding-腾讯云" class="headerlink" title="git：码云，github，gitlab，coding+腾讯云"></a>git：码云，github，gitlab，coding+腾讯云</h2><h1 id="怎么使用git"><a href="#怎么使用git" class="headerlink" title="怎么使用git"></a>怎么使用git</h1><p>基于命令</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">#基于个人</span><br><span class="line">git clone 地址:克隆一个仓库</span><br><span class="line">git init ：git 初始化 生成.git文件</span><br><span class="line">git add 文件名字： git add . :将所有文件提交到缓存 没有提交记录</span><br><span class="line">git commit -m <span class="string">&#x27;描述信息&#x27;</span> ：提交到本地</span><br><span class="line">git log ：提交日志</span><br><span class="line">git status：查看git状态</span><br><span class="line">git remote add origin 地址 ：关联远程地址</span><br><span class="line">git remote -v：查看有没有管乱远程地址</span><br><span class="line">git push origin 分支 ：推送到远程</span><br><span class="line">git pull：从远程拉取</span><br><span class="line">git pull origin 分支名字</span><br><span class="line">#团队协作： 分支</span><br><span class="line">命令：以姓名命名：</span><br><span class="line">默认分支（主分支）：master</span><br><span class="line">合并：dev分支</span><br><span class="line">git branch ZhangXu ：查看分支</span><br><span class="line">git merge 分支名字：合并分支</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/xuzhangZ/newcdn/img/image-20210819200304261.png" alt="image-20210819200304261"></p>
+<h1 id="两个人协作"><a href="#两个人协作" class="headerlink" title="两个人协作"></a>两个人协作</h1><p>1.创建一个仓库 一个组只建一个仓库</p>
+<p>2.其中一个人都克隆 写点代码 提交上去 master</p>
+<p>3.A写代码</p>
+<p>4.A新建自己的分支  自己的分支  dev分支</p>
+<p>5.A将代码提交上去 </p>
+<p>6.B clone 远程代码</p>
+<p>7.B要在本地新建与远程对应的分支</p>
+<p>8.B也要写代码 要切换到B的分支里面写 </p>
+<p>9.提交到远程 </p>
+<ol start="10">
+<li>A拉取 A要在本地新建B的分支</li>
+<li>A 切换到B的分支 </li>
+</ol>
+
       
     </div>
     <footer class="article-footer">
@@ -109,9 +142,9 @@
     </a>
   
   
-    <a href="/2021/08/18/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2021/08/18/123/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
+      <div class="article-nav-title">3day</div>
     </a>
   
 </nav>
@@ -153,6 +186,10 @@
         
           <li>
             <a href="/2021/08/18/2.day/">2day</a>
+          </li>
+        
+          <li>
+            <a href="/2021/08/18/123/">3day</a>
           </li>
         
           <li>
